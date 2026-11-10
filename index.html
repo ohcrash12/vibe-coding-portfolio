@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.OhCheol — About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="scaler" data-scaler>
+      <div class="page" data-artboard>
+        <aside class="sidebar" aria-label="Primary">
+          <nav class="sidebar__nav">
+            <a href="#about" class="sidebar__link" data-panel-link="about">Podcast</a>
+            <a href="#portfolio" class="sidebar__link" data-panel-link="portfolio">Portfolio</a>
+            <a href="#about" class="sidebar__link" data-panel-link="about">Research</a>
+            <a href="#about" class="sidebar__link" data-panel-link="about">Clients</a>
+          </nav>
+        </aside>
+
+        <header class="topbar">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a href="#about" class="brand" data-panel-link="about" aria-label="Home">
+            <span class="brand__logo" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+            </span>
+            <span class="brand__text" data-brand-label>About Me</span>
+          </a>
+        </header>
+
+        <nav id="mobile-nav" class="mobile-nav" hidden>
+          <a href="#podcast">Podcast</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#research">Research</a>
+          <a href="#clients">Clients</a>
+        </nav>
+
+        <main class="stage">
+          <section class="hero panel is-active" id="about" data-panel="about" aria-label="About">
+            <div class="hero__copy">
+              <h1 class="hero__title">
+                <span>Im,</span>
+                <span>J.Oh</span>
+                <span>Cheol</span>
+              </h1>
+
+              <div class="hero__contact">
+                <a class="email" href="mailto:ohcrash12@gmail.com">
+                  <span>ohcrash12@gmail.com</span>
+                  <svg
+                    class="email__icon"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.3l7.1 4.62a.75.75 0 0 0 .8 0l7.1-4.62v-.3a.25.25 0 0 0-.25-.25H4.75Zm14.5 2.56-6.55 4.26a2.25 2.25 0 0 1-2.4 0L3.75 9.06v8.19c0 .138.112.25.25.25h14.5a.25.25 0 0 0 .25-.25V9.06Z"
+                    />
+                  </svg>
+                </a>
+                <div class="email__rule" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="hero__visual">
+              <div class="portrait">
+                <div class="portrait__ring"></div>
+                <div class="portrait__fill">
+                  <img
+                    src="assets/portrait.jpg"
+                    alt="Cartoon portrait of J.Oh Cheol"
+                    width="640"
+                    height="640"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="badge" aria-hidden="true">
+              <span class="badge__orbit badge__orbit--lg"></span>
+              <span class="badge__orbit badge__orbit--sm"></span>
+              <svg class="badge__svg" viewBox="0 0 200 200">
+                <defs>
+                  <path
+                    id="badge-circle"
+                    d="M100,100 m-68,0 a68,68 0 1,1 136,0 a68,68 0 1,1 -136,0"
+                  />
+                </defs>
+                <circle class="badge__disc" cx="100" cy="100" r="78" />
+                <circle class="badge__groove" cx="100" cy="100" r="62" />
+                <circle class="badge__groove" cx="100" cy="100" r="52" />
+                <circle class="badge__groove" cx="100" cy="100" r="42" />
+                <text class="badge__text">
+                  <textPath href="#badge-circle" startOffset="0%">
+                    MY DESIGN PORTFOLIO — 2026 —
+                  </textPath>
+                </text>
+                <circle class="badge__core" cx="100" cy="100" r="10" />
+              </svg>
+            </div>
+          </section>
+
+          <section class="portfolio panel" id="portfolio" data-panel="portfolio" aria-label="Portfolio">
+            <header class="portfolio__head">
+              <h2 class="portfolio__title"></h2>
+              <span class="corner" aria-hidden="true"></span>
+            </header>
+
+            <div class="portfolio__grid">
+              <article class="tile tile--media">
+                <img src="assets/flamingo.jpg" alt="Pink flamingo paper-craft scene" />
+                <button class="play" type="button" aria-label="Play showreel">
+                  <span class="play__icon"></span>
+                </button>
+              </article>
+
+              <article class="tile tile--stat tile--mint">
+                <span class="corner corner--sm" aria-hidden="true"></span>
+                <p>251<br />Projects</p>
+              </article>
+
+              <article class="tile tile--stat tile--violet">
+                <span class="corner corner--sm" aria-hidden="true"></span>
+                <p>156<br />Awards</p>
+              </article>
+
+              <article class="tile tile--clients">
+                <svg class="apple" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M16.7 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2-.1 1.6-.7 3-.7s1.8.7 3 .7 2-.1 2.9-2.2c1.1-1.1 1.5-2.2 1.5-2.3 0-.1-2.9-1.1-2.9-4.3zM14.4 5.9c.6-.8 1.1-1.9.9-3-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.6-1.3z"
+                  />
+                </svg>
+                <span>Clients</span>
+              </article>
+
+              <article class="tile tile--awards">
+                <div class="tile__sphere">
+                  <img src="assets/sphere.jpg" alt="Abstract ridged sphere" />
+                </div>
+                <div class="tile__award-copy">
+                  <span class="corner corner--sm" aria-hidden="true"></span>
+                  <p>172 Global<br />Design Awards.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
